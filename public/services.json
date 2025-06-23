@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Website Design",
+    "description": "Modern, responsive website designs tailored to your brand identity using HTML, CSS, Tailwind, and React.",
+    "image": "https://i.ibb.co/NdTQNrWg/webdesign.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Frontend Development",
+    "description": "High-performance UI development with React.js, Next.js, and modern JavaScript frameworks.",
+    "image": "https://i.ibb.co/mFP8SzZ8/frontend.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Backend Development",
+    "description": "Robust backend solutions using Node.js, Express.js, and MongoDB for scalable web applications.",
+    "image": "https://i.ibb.co/zWLk3YfN/backend.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Full-Stack Applications",
+    "description": "End-to-end development of full-stack applications, including APIs, authentication, and deployment.",
+    "image": "https://i.ibb.co/tpVy5XKK/fullstack.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Landing Pages & Portfolios",
+    "description": "Fast-loading, SEO-friendly landing pages and personal portfolio websites for creators and businesses.",
+    "image": "https://i.ibb.co/8LYxt5qW/portfolio.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Website Optimization",
+    "description": "Improve speed, SEO, accessibility, and mobile responsiveness for better user experience and ranking.",
+    "image": "https://i.ibb.co/twKTJg4r/weboptimization.jpg"
+  }
+]
