@@ -8,7 +8,6 @@ function App() {
 
   return (
     <>
-      <button className='btn'>hlw</button>
     </>
   )
 }

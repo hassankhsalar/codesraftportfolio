@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import {fadeIn} from '../../variants';
+import { FaRegCirclePlay } from "react-icons/fa6";
+import { IoMdCloudDownload } from "react-icons/io";
 
 const Banner = () => {
 
     return (
-        <div className="w-11/12 mx-auto bg-[#fff] dark:bg-white rounded-md relative">
+        <div className="w-11/12 mx-auto bg-white rounded-md relative pt-16">
 
             {/* header */}
             <header
@@ -15,9 +17,9 @@ const Banner = () => {
                     <h1 className="text-[40px] sm:text-[60px] font-semibold leading-[45px] sm:leading-[70px]">A 
                         <span className="text-teal-500"> Frontend Developer</span> is here to be your assistance</h1>
                     <p className="mt-2 text-[1rem]">I am a frontend focused MERN stack developer, ready to help you in making creative digital products!</p>
-                    <div className="flex gap-3">
-                        <a className="btn" target="_blank" href="https://drive.usercontent.google.com/download?id=1tfgw7jFW0mPAQLlh2qCp7mDdmdS7xzZs&export=download&authuser=0&confirm=t&uuid=7bf67440-6395-4b4e-bad3-05cb4eeb066f&at=AN8xHopeyI5_C2dEd9CKZyRCqW-f:1750664458864">Download CV</a>
-                        <button className="btn">Play Video</button>
+                    <div className="flex gap-3 mt-6 xl:mt-10">
+                        <a className="btn rounded-lg text-base bg-teal-700 hover:scale-110 transition-transform hover:font-bold border-white" target="_blank" href="https://drive.usercontent.google.com/download?id=1tfgw7jFW0mPAQLlh2qCp7mDdmdS7xzZs&export=download&authuser=0&confirm=t&uuid=7bf67440-6395-4b4e-bad3-05cb4eeb066f&at=AN8xHopeyI5_C2dEd9CKZyRCqW-f:1750664458864"><IoMdCloudDownload />Download cv</a>
+                        <button className="btn rounded-lg text-base hover:scale-110 transition-transform hover:font-bold border-white bg-teal-700"><FaRegCirclePlay />Play Video</button>
                     </div>
                 </div>
 

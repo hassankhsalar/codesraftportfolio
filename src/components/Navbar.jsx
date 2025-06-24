@@ -4,23 +4,23 @@ import {IoIosSearch} from "react-icons/io";
 import {FaDiscord} from "react-icons/fa";
 import {TbBrandGithubFilled} from "react-icons/tb";
 import {CiMenuFries} from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <nav className="flex items-center justify-between w-11/12 mx-auto relative bg-teal-900 h-16 rounded-2xl px-5">
+        <nav className="flex items-center justify-between w-11/12 mx-auto fixed top-0 bg-teal-900 h-16 rounded-2xl px-5 z-50">
 
             {/* logo */}
             <img src="logo.png" alt="logo" className="w-[40px] "/>
 
             {/* nav menus */}
             <ul className="items-center gap-[20px] text-[1rem] text-[#424242] md:flex hidden">
-                <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer dark:text-[#abc2d3] hover:text-[#3B9DF8] capitalize">home</li>
-                <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer dark:text-[#abc2d3] hover:text-[#3B9DF8] capitalize">about
-                    us
+                <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer dark:text-[#abc2d3] hover:text-[#3B9DF8] capitalize"><Link to='/'>home</Link></li>
+                <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer dark:text-[#abc2d3] hover:text-[#3B9DF8] capitalize"><Link to='/gallery'>Gallery</Link>
                 </li>
-                <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer dark:text-[#abc2d3] hover:text-[#3B9DF8] capitalize">services</li>
+                <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer dark:text-[#abc2d3] hover:text-[#3B9DF8] capitalize"><Link to='/contact'>Contact</Link></li>
             </ul>
 
             {/* search bar and community links */}
@@ -42,11 +42,10 @@ const Navbar = () => {
                 className={` ${isMenuOpen ? "translate-x-0 opacity-100 z-20" : "translate-x-[200px] opacity-0 z-[-1]"} md:hidden bg-[#3B9DF8] p-4 text-center absolute top-[60px] dark:bg-slate-700 right-0 w-full sm:w-[300px] rounded-md transition-all duration-300`}>
 
                 <ul className="items-center gap-[20px] text-[1rem] text-white flex flex-col">
-                    <li className="hover:border-b-[#3B9DF8] dark:text-[#abc2d3] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">home</li>
-                    <li className="hover:border-b-[#3B9DF8] dark:text-[#abc2d3] border-b-[2px] border-transparent transition-all duration-500 cursor-poin ter capitalize">about
-                        us
+                    <li className="hover:border-b-[#3B9DF8] dark:text-[#abc2d3] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"><Link to='/'>home</Link></li>
+                    <li className="hover:border-b-[#3B9DF8] dark:text-[#abc2d3] border-b-[2px] border-transparent transition-all duration-500 cursor-poin ter capitalize"><Link to='/gallery'>Gallery</Link>
                     </li>
-                    <li className="hover:border-b-[#3B9DF8] dark:text-[#abc2d3] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">services</li>
+                    <li className="hover:border-b-[#3B9DF8] dark:text-[#abc2d3] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize"><Link to='/contact'>Contact</Link></li>
                 </ul>
 
             </aside>
