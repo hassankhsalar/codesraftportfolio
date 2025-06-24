@@ -1,9 +1,17 @@
 import React from "react";
 import { IoIosNotificationsOutline } from "react-icons/io";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const ServiceCards = ({ image, label, title }) => {
   return (
-    <div className="min-w-[60%] max-w-[100%] relative hover:scale-110 transition-transform ">
+    <motion.div
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.2 }}
+      className="min-w-[60%] max-w-[100%] relative hover:scale-110 transition-transform "
+    >
       <img
         src={image}
         alt="card"
@@ -22,7 +30,7 @@ const ServiceCards = ({ image, label, title }) => {
           {title}
         </h1>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

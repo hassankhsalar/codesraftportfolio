@@ -1,4 +1,5 @@
-
+import { motion } from "framer-motion";
+import {fadeIn} from '../../variants';
 
 const Banner = () => {
 
@@ -28,7 +29,13 @@ const Banner = () => {
             <section className="px-8 pb-[30px] mt-8">
                 <h1 className="text-[1.3rem] text-slate-600 font-semibold">Our Service</h1>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-10 w-[70%]">
+                <motion.div
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: false, amount: 0.7}}
+                
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-10 w-[70%]">
                     <div>
                         <img src="https://i.ibb.co/z721j8b/Vector.png" alt="Vector" className="w-[30px]"/>
                         <h4 className="text-[1.1rem] dark:text-slate-600 mt-3">Branding</h4>
@@ -49,7 +56,7 @@ const Banner = () => {
                         <p className="text-[0.9rem] text-gray-500 mt-1 dark:text-slate-400">Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit.</p>
                     </div>
-                </div>
+                </motion.div>
             </section>
 
             {/* right blur shadow */}

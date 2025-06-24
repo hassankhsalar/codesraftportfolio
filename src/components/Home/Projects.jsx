@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const Projects = () => {
   return (
@@ -13,7 +15,13 @@ const Projects = () => {
       </div>
 
       {/* 1st row of projects */}
-      <div className="flex gap-4">
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="flex flex-col md:flex-row gap-4"
+      >
         {/* project number 1 */}
 
         <div className="w-full sm:w-[80%] lg:w-[60%] h-[350px] relative overflow-hidden group cursor-pointer rounded-md">
@@ -72,11 +80,17 @@ const Projects = () => {
           {/*  bottom shadow  */}
           <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>
         </div>
-      </div>
+      </motion.div>
 
       {/* 2nd row of projects */}
 
-      <div className="flex gap-3 mt-14">
+      <motion.div
+        variants={fadeIn("left", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="flex flex-col md:flex-row gap-3 mt-14"
+      >
         {/* boi chai project */}
         <div className="w-full sm:w-[80%] lg:w-[60%] h-[350px] relative overflow-hidden group cursor-pointer rounded-md">
           {/*  image  */}
@@ -122,7 +136,10 @@ const Projects = () => {
               Travellers assisting site
             </p>
             <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
-              <a target="_blank" href="https://visa-navigator-portal-152e9.web.app/">
+              <a
+                target="_blank"
+                href="https://visa-navigator-portal-152e9.web.app/"
+              >
                 View Details
               </a>
             </button>
@@ -158,7 +175,7 @@ const Projects = () => {
           {/*  bottom shadow  */}
           <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
