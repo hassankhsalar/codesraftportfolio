@@ -4,7 +4,7 @@ import { fadeIn } from "../../variants";
 
 const Projects = () => {
   return (
-    <div className="w-11/12 mx-auto mb-8">
+    <div id="featured" className="w-11/12 mx-auto mb-8">
       <div>
         <h3 className="text-2xl text-teal-400 font-bold mt-10 text-center">
           Featured Projects
@@ -48,20 +48,19 @@ const Projects = () => {
           </div>
 
           {/*  bottom shadow  */}
-          <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"></div>
+          <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgba(0,0,0,0.57)] to-[rgb(0,0,0,0.9)] h-[100%] absolute bottom-0 left-0 right-0"></div>
         </div>
 
         {/* project number 2 */}
 
         <div className="w-full sm:w-[80%] lg:w-[60%] h-[350px] relative overflow-hidden group cursor-pointer rounded-md">
-          {/*  image  */}
+          
           <img
             src="https://i.ibb.co/35tDgdD4/image-1.jpg"
             alt="animated_card"
             className="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
           />
 
-          {/*  text  */}
           <div className="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col">
             <h1 className="text-[2.5rem] font-bold text-slate-700 text-center capitalize group-hover:text-white">
               FlyDriveGo
@@ -77,8 +76,7 @@ const Projects = () => {
             </button>
           </div>
 
-          {/*  bottom shadow  */}
-          <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>
+          <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.57)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>
         </div>
       </motion.div>
 
@@ -115,7 +113,6 @@ const Projects = () => {
             </button>
           </div>
 
-          {/*  bottom shadow  */}
           <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>
         </div>
         {/* visa navigator project */}
@@ -145,7 +142,6 @@ const Projects = () => {
             </button>
           </div>
 
-          {/*  bottom shadow  */}
           <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>
         </div>
         {/* peddy pets project */}
@@ -172,7 +168,6 @@ const Projects = () => {
             </button>
           </div>
 
-          {/*  bottom shadow  */}
           <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>
         </div>
       </motion.div>

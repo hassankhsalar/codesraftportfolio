@@ -15,7 +15,7 @@ const Contact = () => {
             <h1 className="text-[2rem] text-slate-500 font-[600] leading-[35px]">
               Get in <span className="text-teal-400">touch</span>
             </h1>
-            <p className="text-[0.9rem] dark:text-slate-400 mt-2 mb-8">
+            <p className="text-[0.9rem] text-slate-400 mt-2 mb-8">
               Let"s align our constellations! Reach out and let the magic of
               collaboration illuminate our skies.
             </p>

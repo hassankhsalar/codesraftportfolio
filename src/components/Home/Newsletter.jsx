@@ -14,16 +14,16 @@ const Newsletter = () => {
                 </div>
 
                 <div className="w-full lg:w-[50%]">
-                    <b className="text-[1rem] dark:text-[#abc2d3] sm:text-[1.8rem] text-text">Subscribe to my</b>
-                    <h1 className="text-[2rem] dark:text-[#abc2d3] sm:text-[3rem] font-[800] capitalize text-text leading-[50px]">newsletter</h1>
-                    <p className="text-[1.1rem] dark:text-[#abc2d3] mt-3">Get weekly updates on the newest design
+                    <b className="text-[1rem] text-slate-500 sm:text-[1.8rem] text-text">Subscribe to my</b>
+                    <h1 className="text-[2rem] text-slate-600 sm:text-[3rem] font-[800] capitalize text-text leading-[50px]">newsletter</h1>
+                    <p className="text-[1.1rem] text-slate-500 mt-3">Get weekly updates on the newest design
                         stories, case studies and tips right
                         in your mailbox. <b>Subscribe now!</b></p>
 
                     <form className="mt-5">
                         <div className="relative">
                             <input placeholder="Email Address"
-                                   className="w-full py-3 dark:border-slate-700 dark:bg-slate-900 dark:placeholder:text-slate-500 dark:text-[#abc2d3] pr-4 pl-14 outline-none focus:ring-0 border rounded-md border-[#00b0ff]"/>
+                                   className="w-full text-center py-3 border-slate-700 bg-slate-900 placeholder:text-slate-300 text-white pr-4 pl-14 outline-none focus:ring-0 border rounded-md"/>
                             <AiOutlineMail
                                 className="absolute top-[50%] transform translate-y-[-50%] left-3 text-teal-400 text-[1.7rem]"/>
                         </div>

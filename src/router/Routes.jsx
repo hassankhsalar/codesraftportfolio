@@ -5,6 +5,7 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
 import Contact from "../Pages/Contact";
 import Gallery from "../Pages/Gallery";
+import Error from "../Pages/error";
 
 export const router = createBrowserRouter([
   {
@@ -25,4 +26,8 @@ export const router = createBrowserRouter([
         }
     ]
   },
+  {
+    path: '*',
+    element: <Error/>
+  }
 ]);

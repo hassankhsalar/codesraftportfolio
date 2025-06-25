@@ -10,10 +10,11 @@ import { fadeIn } from "../../variants";
 const Myskills = () => {
   return (
     <div>
-      <h1 className="text-5xl font-bold text-slate-500 mt-10 text-center">
+      <h1 className="text-4xl lg:text-5xl font-bold text-slate-500 mt-10 text-center text-transparent bg-clip-text bg-gradient-to-b from-teal-400 via-teal-600 to-teal-800">
         SKILLS
       </h1>
       <div className="flex flex-col md:flex-row  justify-center items-center w-11/12 mx-auto">
+       {/* left component */}
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
@@ -21,7 +22,7 @@ const Myskills = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-11/12 md:w-1/2"
         >
-          <p className="py-6 text-slate-400 text-xl px-4 text-justify">
+          <p className="py-6 text-slate-500 text-xl px-4 text-justify">
             I am a dedicated Full Stack Developer with expertise in building
             dynamic, responsive, and user-friendly web applications. With
             proficiency in modern technologies like React, Tailwind CSS,
@@ -32,7 +33,7 @@ const Myskills = () => {
             Let's create something amazing together!
           </p>
         </motion.div>
-
+      {/* right component/logo */}
         <motion.div
           variants={fadeIn("left", 0.2)}
           initial="hidden"
