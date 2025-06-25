@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between w-11/12 mx-auto fixed top-0 bg-teal-900 h-16 rounded-2xl px-5 z-50">
 
             {/* logo */}
-            <img src="logo.png" alt="logo" className="w-[40px] "/>
+            <Link to='/'><img src="logo.png" alt="logo" className="w-[40px] "/></Link>
 
             {/* nav menus */}
             <ul className="items-center gap-[20px] text-[1rem] text-[#424242] md:flex hidden">
