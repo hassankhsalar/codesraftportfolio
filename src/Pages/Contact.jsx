@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import banner from "/contact.jpg";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
+
+  // since the react-helmet/async is not compatible with react 19, useEffect has been used to force title change
+  useEffect(() => {
+      document.title = "Codesraft | Contact";
+    }, []);
+
   return (
     <div>
-        {/* image */}
+
+      {/* page title */}
+      <Helmet>
+        <title>Codesraft | Contact</title>
+      </Helmet>
+
+      {/* image */}
       <div>
-        <img className="max-h-[600px] w-full object-cover" src={banner} alt="" />
+        <img
+          className="max-h-[600px] w-full object-cover"
+          src={banner}
+          alt=""
+        />
       </div>
       <section className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-[30px] shadow-md p-[40px] rounded-xl">
         {/* form area */}

@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import w1 from "/w1.jpg";
 import w2 from "/w3.jpg";
 import w3 from "/w3.jpg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Helmet } from "react-helmet-async";
 
 const Gallery = () => {
+
+  useEffect(() => {
+    document.title = "Codesraft | Gallery";
+  }, []);
+
   return (
     //Project showcase
     <div className="w-11/12 mx-auto pt-24 pb-10">
+
+      {/* page title */}
+      <Helmet>
+        <title>Codesraft | Gallery</title>
+      </Helmet>
+
+
       <h1 className=" text-slate-700 pb-12 text-center text-3xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-teal-400 via-teal-600 to-teal-800">Sneak Peak at my latest Projects</h1>
       <div className="grid grid-cols-4 gap-2">
         <motion.img
