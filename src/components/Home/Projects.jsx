@@ -40,11 +40,18 @@ const Projects = () => {
             <p className="text-center z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem]">
               Fitness portal with numerous training routine and scheduling.
             </p>
-            <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
+            <div className="flex gap-3">
+              <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
               <a target="_blank" href="https://monster-factory-3479a.web.app/">
-                View Details
+                Live Link
               </a>
             </button>
+            <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
+              <a target="_blank" href="https://github.com/hassankhsalar/Monster-Factory-Client">
+                Github
+              </a>
+            </button>
+            </div>
           </div>
 
           {/*  bottom shadow  */}
@@ -69,11 +76,18 @@ const Projects = () => {
               One stop solution for travellers.Ticket bookings, Shopping and
               Visas!
             </p>
-            <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
+            <div className="flex gap-3">
+              <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
               <a target="_blank" href="https://flydrivego.netlify.app/">
-                View Details
+                Live Link
               </a>
             </button>
+            <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
+              <a target="_blank" href="https://github.com/hassankhsalar/FlyDriveGo.git">
+                Github
+              </a>
+            </button>
+            </div>
           </div>
 
           <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.57)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>
@@ -106,11 +120,18 @@ const Projects = () => {
             <p className="text-center z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem]">
               Library Management system with book borrowing system
             </p>
-            <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
+            <div className="flex gap-3">
+              <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
               <a target="_blank" href="https://boi-chai-3669a.web.app/">
-                View Details
+                Live Link
               </a>
             </button>
+            <button className=" z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 bg-teal-400 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
+              <a target="_blank" href="https://github.com/hassankhsalar/Boi-chai">
+                Github
+              </a>
+            </button>
+            </div>
           </div>
 
           <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgba(0,0,0,0.82)] h-[100%] absolute bottom-0 left-0 right-0"></div>

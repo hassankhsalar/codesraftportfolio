@@ -14,7 +14,7 @@ const Contact = () => {
 
       {/* page title */}
       <Helmet>
-        <title>Codesraft | Contact</title>
+        <title>Contact</title>
       </Helmet>
 
       {/* image */}

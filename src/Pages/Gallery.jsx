@@ -18,7 +18,7 @@ const Gallery = () => {
 
       {/* page title */}
       <Helmet>
-        <title>Codesraft | Gallery</title>
+        <title>Gallery</title>
       </Helmet>
 
 

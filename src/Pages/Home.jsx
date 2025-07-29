@@ -11,7 +11,7 @@ const Home = () => {
 
     // since the react-helmet/async is not compatible(Requiring refresh) with react 19, useEffect has been used to force title change
       useEffect(() => {
-          document.title = "Codesraft | Home";
+          document.title = "Home";
         }, []);
     
   return (
@@ -33,9 +33,9 @@ const Home = () => {
       <div>
         <Projects />
       </div>
-      <div>
+      {/* <div>
         <Testimonial />
-      </div>
+      </div> */}
       <div>
         <Newsletter />
       </div>
